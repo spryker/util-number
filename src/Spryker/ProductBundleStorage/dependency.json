@@ -1,5 +1,0 @@
-{
-    "include": {
-        "spryker/product-storage": "Defined for forward-compatibility reasons."
-    }
-}

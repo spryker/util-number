@@ -1,6 +1,0 @@
-{
-    "include": {
-        "spryker/transfer": "Provides transfer objects definition with `::get*OrFail()` functionality.",
-        "spryker/merchant-profile": "Added for forward compatibility."
-    }
-}
