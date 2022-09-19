@@ -1,18 +1,15 @@
-# Spryker Commerce OS
+# UtilNumber Module
+[![Latest Stable Version](https://poser.pugx.org/spryker/util-number/v/stable.svg)](https://packagist.org/packages/spryker/util-number)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
 
-## Core Modules
+UtilNumber provides low level numbers related functionality.
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spryker/spryker-core/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/spryker/spryker-core/?branch=master)
-[![Minimum PHP Version](http://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
+## Installation
 
-This is a mono-repo of our Spryker modules.
-If you want to make a PR with suggested changes, please do so in the specific module repository
-`https://github.com/spryker/{module-name}`.
+```
+composer require spryker/util-number
+```
 
-### Links
-- **[Spryker Documentation](https://docs.spryker.com/)**
-- [Spryker Architecture-Sniffer](https://github.com/spryker/architecture-sniffer)
-- [Spryker Code-Sniffer](https://github.com/spryker/code-sniffer)
-- [Spryker Code-Generator](https://github.com/spryker/code-generator)
+## Documentation
 
-
+[Spryker Documentation](https://docs.spryker.com)
