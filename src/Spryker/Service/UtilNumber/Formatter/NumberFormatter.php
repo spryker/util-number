@@ -17,19 +17,11 @@ class NumberFormatter implements NumberFormatterInterface
      */
     protected NumberFormatterFactoryInterface $numberFormatterFactory;
 
-    /**
-     * @param \Spryker\Service\UtilNumber\Formatter\NumberFormatterFactoryInterface $numberFormatterFactory
-     */
     public function __construct(NumberFormatterFactoryInterface $numberFormatterFactory)
     {
         $this->numberFormatterFactory = $numberFormatterFactory;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\NumberFormatIntRequestTransfer $numberFormatIntRequestTransfer
-     *
-     * @return string
-     */
     public function formatInt(NumberFormatIntRequestTransfer $numberFormatIntRequestTransfer): string
     {
         return (string)$this->numberFormatterFactory
@@ -37,11 +29,6 @@ class NumberFormatter implements NumberFormatterInterface
             ->format($numberFormatIntRequestTransfer->getNumberOrFail());
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\NumberFormatFloatRequestTransfer $numberFormatFloatRequestTransfer
-     *
-     * @return string
-     */
     public function formatFloat(NumberFormatFloatRequestTransfer $numberFormatFloatRequestTransfer): string
     {
         return (string)$this->numberFormatterFactory

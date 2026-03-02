@@ -16,9 +16,6 @@ use Spryker\Zed\UtilNumber\UtilNumberDependencyProvider;
  */
 class UtilNumberCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Service\UtilNumber\UtilNumberServiceInterface
-     */
     public function getUtilNumberService(): UtilNumberServiceInterface
     {
         return $this->getProvidedDependency(UtilNumberDependencyProvider::SERVICE_UTIL_NUMBER);

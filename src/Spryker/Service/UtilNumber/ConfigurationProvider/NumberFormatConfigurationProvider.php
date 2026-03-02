@@ -19,19 +19,11 @@ class NumberFormatConfigurationProvider implements NumberFormatConfigurationProv
      */
     protected NumberFormatterFactoryInterface $numberFormatterFactory;
 
-    /**
-     * @param \Spryker\Service\UtilNumber\Formatter\NumberFormatterFactoryInterface $numberFormatterFactory
-     */
     public function __construct(NumberFormatterFactoryInterface $numberFormatterFactory)
     {
         $this->numberFormatterFactory = $numberFormatterFactory;
     }
 
-    /**
-     * @param string|null $locale
-     *
-     * @return \Generated\Shared\Transfer\NumberFormatConfigTransfer
-     */
     public function getNumberFormatConfig(?string $locale = null): NumberFormatConfigTransfer
     {
         $numberFormatter = $this->numberFormatterFactory->createIntlNumberFormatter(

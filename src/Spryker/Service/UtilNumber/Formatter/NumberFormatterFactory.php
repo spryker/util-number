@@ -18,19 +18,11 @@ class NumberFormatterFactory implements NumberFormatterFactoryInterface
      */
     protected UtilNumberConfig $utilNumberConfig;
 
-    /**
-     * @param \Spryker\Service\UtilNumber\UtilNumberConfig $utilNumberConfig
-     */
     public function __construct(UtilNumberConfig $utilNumberConfig)
     {
         $this->utilNumberConfig = $utilNumberConfig;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\NumberFormatFilterTransfer $numberFormatFilterTransfer
-     *
-     * @return \NumberFormatter
-     */
     public function createIntlNumberFormatter(NumberFormatFilterTransfer $numberFormatFilterTransfer): IntlNumberFormatter
     {
         $numberFormatStyle = $numberFormatFilterTransfer->getNumberFormatStyle() ?? $this->utilNumberConfig->getNumberFormatStyle();
@@ -43,12 +35,6 @@ class NumberFormatterFactory implements NumberFormatterFactoryInterface
         return $this->configureIntlNumberFormatterAttributes($numberFormatter, $numberFormatFilterTransfer);
     }
 
-    /**
-     * @param \NumberFormatter $numberFormatter
-     * @param \Generated\Shared\Transfer\NumberFormatFilterTransfer $numberFormatFilterTransfer
-     *
-     * @return \NumberFormatter
-     */
     protected function configureIntlNumberFormatterAttributes(
         IntlNumberFormatter $numberFormatter,
         NumberFormatFilterTransfer $numberFormatFilterTransfer

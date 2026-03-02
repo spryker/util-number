@@ -20,25 +20,16 @@ use Spryker\Service\UtilNumber\Formatter\NumberFormatterInterface;
  */
 class UtilNumberServiceFactory extends AbstractServiceFactory
 {
-    /**
-     * @return \Spryker\Service\UtilNumber\Formatter\NumberFormatterInterface
-     */
     public function createNumberFormatter(): NumberFormatterInterface
     {
         return new NumberFormatter($this->createNumberFormatterFactory());
     }
 
-    /**
-     * @return \Spryker\Service\UtilNumber\ConfigurationProvider\NumberFormatConfigurationProviderInterface
-     */
     public function createNumberFormatConfigurationProvider(): NumberFormatConfigurationProviderInterface
     {
         return new NumberFormatConfigurationProvider($this->createNumberFormatterFactory());
     }
 
-    /**
-     * @return \Spryker\Service\UtilNumber\Formatter\NumberFormatterFactoryInterface
-     */
     public function createNumberFormatterFactory(): NumberFormatterFactoryInterface
     {
         return new NumberFormatterFactory($this->getConfig());

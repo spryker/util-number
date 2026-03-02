@@ -39,11 +39,6 @@ class NumberFormatterApplicationPlugin extends AbstractPlugin implements Applica
         return $container;
     }
 
-    /**
-     * @param \Spryker\Service\Container\ContainerInterface $container
-     *
-     * @return \Spryker\Service\Container\ContainerInterface
-     */
     protected function addUtilNumberService(ContainerInterface $container): ContainerInterface
     {
         $container->set(static::SERVICE_UTIL_NUMBER, function () {

@@ -12,17 +12,7 @@ use Generated\Shared\Transfer\NumberFormatIntRequestTransfer;
 
 interface NumberFormatterInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\NumberFormatIntRequestTransfer $numberFormatIntRequestTransfer
-     *
-     * @return string
-     */
     public function formatInt(NumberFormatIntRequestTransfer $numberFormatIntRequestTransfer): string;
 
-    /**
-     * @param \Generated\Shared\Transfer\NumberFormatFloatRequestTransfer $numberFormatFloatRequestTransfer
-     *
-     * @return string
-     */
     public function formatFloat(NumberFormatFloatRequestTransfer $numberFormatFloatRequestTransfer): string;
 }

@@ -12,10 +12,5 @@ use NumberFormatter as IntlNumberFormatter;
 
 interface NumberFormatterFactoryInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\NumberFormatFilterTransfer $numberFormatFilterTransfer
-     *
-     * @return \NumberFormatter
-     */
     public function createIntlNumberFormatter(NumberFormatFilterTransfer $numberFormatFilterTransfer): IntlNumberFormatter;
 }

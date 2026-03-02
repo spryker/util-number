@@ -20,11 +20,6 @@ class UtilNumberDependencyProvider extends AbstractBundleDependencyProvider
      */
     public const SERVICE_UTIL_NUMBER = 'SERVICE_UTIL_NUMBER';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = parent::provideCommunicationLayerDependencies($container);
@@ -34,11 +29,6 @@ class UtilNumberDependencyProvider extends AbstractBundleDependencyProvider
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addUtilNumberService(Container $container): Container
     {
         $container->set(static::SERVICE_UTIL_NUMBER, function (Container $container) {

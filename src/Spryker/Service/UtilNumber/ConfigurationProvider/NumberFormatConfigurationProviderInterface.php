@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\NumberFormatConfigTransfer;
 
 interface NumberFormatConfigurationProviderInterface
 {
-    /**
-     * @param string|null $locale
-     *
-     * @return \Generated\Shared\Transfer\NumberFormatConfigTransfer
-     */
     public function getNumberFormatConfig(?string $locale = null): NumberFormatConfigTransfer;
 }
