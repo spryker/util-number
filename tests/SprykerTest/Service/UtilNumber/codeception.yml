@@ -18,4 +18,5 @@ suites:
             enabled:
                 - \SprykerTest\Shared\Testify\Helper\Environment
                 - \SprykerTest\Service\Testify\Helper\ServiceHelper
+                - \SprykerTest\Shared\Testify\Helper\DependencyHelper
                 - \SprykerTest\Service\Testify\Helper\DependencyProviderHelper
